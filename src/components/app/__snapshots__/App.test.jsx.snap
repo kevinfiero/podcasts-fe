@@ -1,0 +1,98 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component renders App 1`] = `
+<DocumentFragment>
+  <input
+    class="Search"
+    placeholder="Search For Your Favorite Podcast!"
+    type="text"
+    value=""
+  />
+  <div>
+    <ul
+      class="PodcastList"
+    >
+      <li
+        class="PodcastList"
+      >
+        <div
+          class="Podcast"
+        >
+          <a
+            href="http://www.earwolf.com/show/comedy-bang-bang/?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website"
+            target="_blank"
+          >
+            <h3>
+              Comedy Bang Bang
+            </h3>
+            <img
+              alt="Comedy Bang Bang"
+              src="https://cdn-images-1.listennotes.com/podcasts/comedy-bang-bang-the-podcast-earwolf-and-3PWDcO-9hty-1mILDBlbHr9.300x300.jpg"
+            />
+          </a>
+        </div>
+      </li>
+      <li
+        class="PodcastList"
+      >
+        <div
+          class="Podcast"
+        >
+          <a
+            href="http://www.earwolf.com/show/comedy-bang-bang/?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website"
+            target="_blank"
+          >
+            <h3>
+              Comedy Bang Bang
+            </h3>
+            <img
+              alt="Comedy Bang Bang"
+              src="https://cdn-images-1.listennotes.com/podcasts/comedy-bang-bang-the-podcast-earwolf-and-3PWDcO-9hty-1mILDBlbHr9.300x300.jpg"
+            />
+          </a>
+        </div>
+      </li>
+      <li
+        class="PodcastList"
+      >
+        <div
+          class="Podcast"
+        >
+          <a
+            href="http://www.earwolf.com/show/comedy-bang-bang/?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website"
+            target="_blank"
+          >
+            <h3>
+              Comedy Bang Bang
+            </h3>
+            <img
+              alt="Comedy Bang Bang"
+              src="https://cdn-images-1.listennotes.com/podcasts/comedy-bang-bang-the-podcast-earwolf-and-3PWDcO-9hty-1mILDBlbHr9.300x300.jpg"
+            />
+          </a>
+        </div>
+      </li>
+      <li
+        class="PodcastList"
+      >
+        <div
+          class="Podcast"
+        >
+          <a
+            href="http://www.earwolf.com/show/comedy-bang-bang/?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website"
+            target="_blank"
+          >
+            <h3>
+              Comedy Bang Bang
+            </h3>
+            <img
+              alt="Comedy Bang Bang"
+              src="https://cdn-images-1.listennotes.com/podcasts/comedy-bang-bang-the-podcast-earwolf-and-3PWDcO-9hty-1mILDBlbHr9.300x300.jpg"
+            />
+          </a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</DocumentFragment>
+`;
