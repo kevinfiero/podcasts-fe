@@ -11,8 +11,13 @@ export default class PodcastSearch extends Component {
   }
 
   fetchPodcasts = () => {
+    if(this.state.search.length > 1){
     findPodcasts(this.state.search)
       .then(podcasts => this.setState({ podcasts }))
+    }
+    else{
+      this.setState({podcasts: []})
+    }
   }
 
   handleSearch = ({ target }) => {
