@@ -1,7 +1,9 @@
 import React from 'react';
 import { screen, render, waitFor } from '@testing-library/react'
 import user from '@testing-library/user-event'
-describe(() => {
+import PodcastSearch from './PodcastSearch';
+
+describe('', () => {
 
   it('search for podcasts when a search term is typed', () => {
     render(<PodcastSearch />)
@@ -16,7 +18,7 @@ describe(() => {
     user.type(searchInput, 'Comedy Bang Bang');
 
     return waitFor(() => {
-      expect(screen.getByTestId('podcasts').not.toBeEmptyDOMElement());
+      expect(screen.getByTestId('podcasts')).not.toBeEmptyDOMElement();
     })
   
   })
