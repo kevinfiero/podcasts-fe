@@ -1,5 +1,3 @@
-import fetch from "node-fetch"
-
 export const findPodcasts = search => {
   return fetch(`https://listen-api.listennotes.com/api/v2/search?q=${search}&type=podcast&only_in=title`,
     {headers: {"X-ListenAPI-Key": "000ba63ee06a4f409f1d44b8d5e39660"}}
