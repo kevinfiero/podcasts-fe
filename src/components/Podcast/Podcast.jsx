@@ -6,12 +6,16 @@ function Podcast({ title, thumbnail, url, favorites, onClick}) {
 
   let clicked = false
 
-  let arr = favorites.map(function (obj) {
-    return obj.url
-  })
-  if(arr.includes(url)){
-    clicked = true
+  if(favorites !== null){
+    let arr = favorites.map(function (obj) {
+      return obj.url
+    })
+    if(arr.includes(url)){
+      clicked = true
+    }
   }
+
+
 
   return (
     <div className={styles.Podcast}>
