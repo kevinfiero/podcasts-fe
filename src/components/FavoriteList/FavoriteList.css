@@ -1,0 +1,17 @@
+.FavoriteList {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  list-style-type: none;
+  justify-items: center;
+  align-items: center;
+
+
+  li {
+    margin: 1rem;
+
+    div {
+      place-self: center;
+      width: 1fr;
+    }
+  }
+}

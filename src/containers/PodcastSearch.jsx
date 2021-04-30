@@ -22,13 +22,20 @@ export default class PodcastSearch extends Component {
   }
 
   handleFavorite = (url, title, thumbnail) => {
-    this.setState({ favorites: [...this.state.favorites, {url: url, title: title, thumbnail: thumbnail}] })
+    this.setState({ favorites: [...this.state.favorites, {url: url, title: title, thumbnail: thumbnail}] }, () => 
+      {localStorage.setItem('favorites', JSON.stringify(this.state.favorites))}
+    )
   }
 
   handleSearch = ({ target }) => {
     this.setState({ search: target.value }, () => {
         this.fetchPodcasts();
     })
+  }
+
+  componentDidMount() {
+    this.setState({ favorites: JSON.parse(localStorage.getItem('favorites')) }) 
+
   }
 
   render() {
