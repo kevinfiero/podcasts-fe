@@ -7,7 +7,8 @@ export default class PodcastSearch extends Component {
 
   state = {
     search: '',
-    podcasts: []
+    podcasts: [],
+    favorites: []
   }
 
   fetchPodcasts = () => {
@@ -20,6 +21,10 @@ export default class PodcastSearch extends Component {
     }
   }
 
+  handleFavorite = (url, title, thumbnail) => {
+    this.setState({ favorites: [...this.state.favorites, {url: url, title: title, thumbnail: thumbnail}] })
+  }
+
   handleSearch = ({ target }) => {
     this.setState({ search: target.value }, () => {
         this.fetchPodcasts();
@@ -27,12 +32,12 @@ export default class PodcastSearch extends Component {
   }
 
   render() {
-    const { search, podcasts } = this.state;
+    const { search, podcasts, favorites } = this.state;
 
     return(
       <>
         <Search search = {search} onChange={this.handleSearch}/>
-        <PodcastList podcasts={podcasts} />
+        <PodcastList podcasts={podcasts} favorites={favorites} onClick={this.handleFavorite}/>
       </>
     )
   }

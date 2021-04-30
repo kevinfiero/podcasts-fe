@@ -3,11 +3,11 @@ import PropTypes from 'prop-types'
 import Podcast from '../Podcast/podcast';
 import styles from './PodcastList.css';
 
-const PodcastList = ({ podcasts }) => {
+const PodcastList = ({ podcasts, favorites, onClick }) => {
 
   const podcastElements = podcasts.map((podcast) => (
     <li key={podcast.url} className={styles.PodcastList}>
-      <Podcast {...podcast} />
+      <Podcast {...podcast} favorites={favorites} onClick={onClick} />
     </li>
   ));
 
@@ -27,7 +27,8 @@ PodcastList.propTypes = {
     title: PropTypes.string.isRequired,
     thumbnail: PropTypes.string.isRequired,
     url: PropTypes.string.isRequired
-  }))
+  })),
+  onClick: PropTypes.func.isRequired
 
 }
 
